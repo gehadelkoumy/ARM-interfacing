@@ -4,12 +4,14 @@
 /* Date    : 9 FEB 2023                  */
 /*****************************************/
 
-#ifndef ENCODER_INTERFACE_H
-#define ENCODER_INTERFACE_H
+#ifndef ENCODER_CONFIG_H
+#define ENCODER_CONFIG_H
 
-u8 HENCODER_u8GetMotorDirection(u8 Copy_u8Channel2Port , u8 Copy_u8Channel2Pin);
-u16 HENCODER_u16GetEncoderCounts(u8 Copy_u8Channel2Port ,u8 Copy_u8Channel2Pin);
+//#define channel1	GPIOA,8
+//#define channel2	GPIOA,9
 
+#define		EncoderResolution   	 225
+#define 	  WheelRadius			  3.5
 
 
 #endif
